@@ -1,7 +1,6 @@
 // import { galleryItems } from './gallery-items.js';
 // // Change code below this line
 
-
 // const galleryEl = document.querySelector(".gallery");
 // const markapGalery = createGallery(galleryItems);
 //     function createGallery(galleryItems) {
@@ -21,14 +20,10 @@
 // console.log(createGallery(galleryItems));
 // galleryEl.insertAdjacentHTML("beforeend", markapGalery);
 
-
 // new SimpleLightbox(".gallery a", {
 //   captionsData: "alt",
 //   captionDelay: 250,
 // });
-
-
-
 
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line

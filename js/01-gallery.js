@@ -35,7 +35,6 @@ function onClickGalery(e) {
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       instance.close();
-      console.log("helow vasa");
     }
   });
 }
