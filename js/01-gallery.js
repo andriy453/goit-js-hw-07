@@ -20,6 +20,7 @@ const markapGalery = galleryItems
   )
   .join("");
 galleryEl.insertAdjacentHTML("beforeend", markapGalery);
+
 galleryEl.addEventListener("click", onClickGalery);
 function onClickGalery(e) {
   e.preventDefault();
@@ -32,9 +33,14 @@ function onClickGalery(e) {
 `);
 
   instance.show();
-  window.addEventListener("keydown", (e) => {
+  window.addEventListener("keydown", closeGalery);
+ 
+  function closeGalery(e) {
     if (e.key === "Escape") {
-      instance.close();
+      console.log("close");
+
+      instance.close(window.removeEventListener("keydown", closeGalery));
+       
     }
-  });
+  }
 }
